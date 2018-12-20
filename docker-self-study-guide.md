@@ -87,7 +87,7 @@ Lets see what is in there:
 You can build and run this custom image in the following way:
 
 ```bash
-$ docker build . -t fancy-Hello World:1
+$ docker build . -t fancy-hello-world:1
 
 Sending build context to Docker daemon  731.6kB
 Step 1/2 : FROM alpine:latest
