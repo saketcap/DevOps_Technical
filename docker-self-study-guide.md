@@ -116,7 +116,7 @@ $ docker pull nginx
 
 ### Run Nginx
 ```bash
-$ docker run --rm --name nginx -d -p <http_port>:80 nginx
+$ docker run --rm --name nginx -d -p 1180:80 nginx
 ```
 
 Nginx index page should be available at `<docker_host>:<http_port>`, for example http://localhost:1180
@@ -225,7 +225,7 @@ $ docker kill nginx-hello-world
 $ docker run --rm --name nginx-hello-world -d -p <http_port>:80 nginx-hello-world
 ```
 
-- What happen if you try to access the hello world page?
+- What happens if you try to access the hello world page?
 - Why?
 
 # Docker-compose
@@ -258,7 +258,7 @@ Execute the following command:
 $ docker-compose up
 Creating network "compose-example_default" with the default driver
 Building nginx
-Step 1/2 : FROM cipadmin-prod.be.net.intra:8085/nginx:1.13.6
+Step 1/2 : FROM nginx
  ---> 40960efd7b8f
 Step 2/2 : COPY hello.html /usr/share/nginx/html
  ---> 3d343140ca24
@@ -298,7 +298,7 @@ $ docker-compose down
 
 ### Nginx with volume
 
-Until now we build the html page inside the docker. We can also mount data from our local computer inside the docker immediatly. 
+Until now we build the html page inside the docker. We can also mount data from our local computer inside the docker immediately.
 
 To test this make a new directory, make the file docker-compose.yml in this directory and give it the following content.
 
