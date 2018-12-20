@@ -208,21 +208,21 @@ alpine                latest              196d12cf6ab1        3 months ago      
 ### Run the nginx hello world image 
 
 ```bash
-$ docker run --rm --name nginx-Hello World -d -p <http_port>:80 nginx-Hello World
+$ docker run --rm --name nginx-hello-world -d -p <http_port>:80 nginx-hello-world
 ```
 
 ```bash
-$ docker logs -f nginx-Hello World
+$ docker logs -f nginx-hello-world
 ```
 
 ### Stop the container
 
 ```bash
-$ docker kill nginx-Hello World
+$ docker kill nginx-hello-world
 ```
 
 ```bash
-$ docker run --rm --name nginx-Hello World -d -p <http_port>:80 nginx-Hello World
+$ docker run --rm --name nginx-hello-world -d -p <http_port>:80 nginx-hello-world
 ```
 
 - What happen if you try to access the hello world page?
@@ -307,7 +307,7 @@ version: '3'
 
 services:
   nginx:
-    image: cipadmin-prod.be.net.intra:8085/nginx:1.13.6
+    image: nginx
     ports:
       - "8080:80"
     volumes:
