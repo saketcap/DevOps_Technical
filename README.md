@@ -10,3 +10,4 @@ following technologies:
 3. [Docker Self Study](docker-self-study-guide.md)
 4. Jenkins (using pipeline scripts)
 5. IntelliJ IDE
+6. Vim
